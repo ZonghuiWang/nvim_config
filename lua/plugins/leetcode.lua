@@ -34,7 +34,7 @@ return {
 
     ---@type table<string, boolean>
     plugins = {
-      non_standalone = false,
+      non_standalone = true,
     },
 
     ---@type boolean
@@ -54,7 +54,7 @@ return {
     },
 
     cache = {
-      update_interval = 60 * 60 * 24 * 7, ---@type integer 7 days
+      update_interval = 60 * 60 * 24 * 365, ---@type integer 365 days
     },
 
     console = {
