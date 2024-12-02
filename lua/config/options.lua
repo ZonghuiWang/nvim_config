@@ -129,7 +129,8 @@ vim.api.nvim_create_autocmd("FileType", {
       0,
       "n",
       "<leader>r",
-      "<ESC>:w<CR>:split<CR>:te gcc -std=c23 -pthread -Wall -o ./%:t:r % -g && ./%:t:r<CR>i",
+      -- "<ESC>:w<CR>:split<CR>:te gcc -lm -std=c2x -pthread -Wall -o a.out % -g && ./a.out<CR>i",
+      "<ESC>:w<CR>:split<CR>:te g++ -std=c++20 -pthread -Wall -o a.out % -g && ./a.out<CR>i",
       { silent = true, noremap = true }
     )
   end,
