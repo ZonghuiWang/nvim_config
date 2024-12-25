@@ -34,7 +34,7 @@ return {
 
     ---@type table<string, boolean>
     plugins = {
-      non_standalone = true,
+      non_standalone = false,
     },
 
     ---@type boolean
@@ -45,7 +45,7 @@ return {
         before = true,
       },
       ["cpp"] = {
-        before = { "#include <bits/stdc++.h>", "using namespace std;" },
+        before = { "#include <bits/stdc++.h>", '\n#include "data_structure.h"', "using namespace std;" },
         after = "int main() {}",
       },
       ["java"] = {
