@@ -24,6 +24,9 @@ keymap.set("n", "sv", "<C-w>s") --水平向新增窗口
 --取消高亮
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
+keymap.set("n", "<leader>e", "<cmd>Yazi<cr>")
+
+keymap.set("n", "<leader>E", "<cmd>Yazi cwd<cr>")
 --插件--
 --nvim-tree
 -- keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
